@@ -13,7 +13,7 @@ public class ThreadPoolExecutorTest {
 
     @Test
     public void coreThreadTimeOutTest() {
-        /*
+        /**
          * 设置核心线程和最大线程都是5个的线程池
          */
         ThreadPoolExecutor threadPoolExecutor =
@@ -48,10 +48,10 @@ public class ThreadPoolExecutorTest {
          * 主线程sleep 40秒
          */
         try {
-            System.out.println("main thread sleep");
+            System.out.println("主线程开始 sleep");
             Thread.sleep(1000 * 40);
         } catch (Exception e) {
-            System.out.println("main thread end");
+            System.out.println("主线程结束 sleep");
         }
     }
 }
